@@ -1,4 +1,4 @@
-name: Do things every 10 minutes
+name: check
 on:
   schedule:
     - cron: "*/10 * * * *"
