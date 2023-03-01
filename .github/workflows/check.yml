@@ -1,7 +1,7 @@
 name: check
 on:
   schedule:
-    - cron: "*/05 * * *"
+    - cron: "*/10 * * *"
 
 jobs:
   pinger_job:
