@@ -9,7 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       URL: ${{ secrets.URL }}
-      METHOD: GET  
+
     steps:
-      - id: ping
-        uses: sisodiya2421/pinger@master
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+          cache: 'pip' # caching p ip dependencies
+      - run: pip install -r requirements.txt
+      - run: python check.py
