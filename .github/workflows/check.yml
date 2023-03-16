@@ -2,6 +2,7 @@ name: check
 on:
   schedule:
     - cron: "*/05 * * * *"
+  workflow_dispatch:
 
 jobs:
   pinger_job:
