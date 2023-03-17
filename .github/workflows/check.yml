@@ -9,7 +9,7 @@ jobs:
     name: A job to ping
     runs-on: ubuntu-latest
     env:
-      URL: ${{ secrets.URL }}
+      URL: "https://correlaid.directus.app/items/events"
 
     steps:
       - uses: actions/checkout@v3
