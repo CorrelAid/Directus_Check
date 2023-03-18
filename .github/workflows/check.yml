@@ -1,7 +1,7 @@
 name: check
 on:
- # schedule:
-#   - cron: "*/05 * * * *"
+  schedule:
+   - cron: "*/05 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
     name: A job to ping
     runs-on: ubuntu-latest
     env:
-      URL: "https://correlaid.directus.app/items/events"
+      URL: "https://correlaid.directus.app/items/Events"
 
     steps:
       - uses: actions/checkout@v3
